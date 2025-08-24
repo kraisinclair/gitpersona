@@ -10,23 +10,11 @@ A powerful CLI tool for managing multiple git and SSH personas for different pro
 - 📋 **Persona Management**: Create, edit, delete, and list all personas
 - 🎯 **Easy Switching**: Quick commands to show active persona and switch between them
 
-## Installation
+## What is GitPersona?
 
-### Global Installation (Recommended)
+GitPersona is a ready-to-use local development tool that helps developers manage multiple git identities and SSH configurations. Whether you're working on personal projects, company work, or client projects, GitPersona allows you to maintain separate git configurations and SSH keys for each context.
 
-```bash
-npm install -g gitpersona
-```
-
-### Local Development
-
-```bash
-git clone <repository>
-cd gitpersona
-npm install
-npm run build
-npm link
-```
+The tool automatically detects your current working directory and switches to the appropriate persona, ensuring you're always using the correct git identity and SSH key for your current project.
 
 ## Usage
 
@@ -120,24 +108,14 @@ gitpersona setup
 # Auto-activate in: /Users/username/Projects/client-project
 ```
 
-## Development
+## How It Works
 
-```bash
-# Install dependencies
-npm install
+GitPersona works by:
 
-# Build the project
-npm run build
-
-# Run in development mode
-npm run dev
-
-# Run tests
-npm test
-
-# Lint code
-npm run lint
-```
+1. **Storing Personas**: Each persona contains git configuration (name, email) and SSH key information
+2. **Directory Detection**: When you navigate to a configured directory, the tool automatically switches to the appropriate persona
+3. **Git Configuration**: Updates the local git config with the persona's name and email
+4. **SSH Management**: Manages SSH keys in your SSH agent for secure authentication
 
 ## License
 
