@@ -1,0 +1,68 @@
+{
+  "version": "1.0.0",
+  "personas": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "name": "work",
+      "gitUserName": "John Doe",
+      "email": "developer@company.com",
+      "sshKeyPath": "/Users/username/.ssh/id_rsa_work",
+      "sshKeyName": "work",
+      "autoActivatePaths": [
+        "/Users/username/Projects/work",
+        "/Users/username/Projects/company"
+      ],
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z",
+      "isActive": true
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "personal",
+      "gitUserName": "John Doe",
+      "email": "dev@personal.com",
+      "sshKeyPath": "/Users/username/.ssh/id_rsa_personal",
+      "sshKeyName": "personal",
+      "autoActivatePaths": [
+        "/Users/username/Projects/personal",
+        "/Users/username/Projects/open-source"
+      ],
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z",
+      "isActive": false
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "client-project",
+      "gitUserName": "John Doe",
+      "email": "dev@clientproject.com",
+      "sshKeyPath": "/Users/username/.ssh/id_rsa_client",
+      "sshKeyName": "client",
+      "autoActivatePaths": ["/Users/username/Projects/client-project"],
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z",
+      "isActive": false
+    }
+  ],
+  "activePersonaId": "550e8400-e29b-41d4-a716-446655440000",
+  "sshKeys": [
+    {
+      "name": "work",
+      "path": "/Users/username/.ssh/id_rsa_work",
+      "publicKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC...",
+      "privateKey": "-----BEGIN OPENSSH PRIVATE KEY-----..."
+    },
+    {
+      "name": "personal",
+      "path": "/Users/username/.ssh/id_rsa_personal",
+      "publicKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC...",
+      "privateKey": "-----BEGIN OPENSSH PRIVATE KEY-----..."
+    },
+    {
+      "name": "client",
+      "path": "/Users/username/.ssh/id_rsa_client",
+      "publicKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC...",
+      "privateKey": "-----BEGIN OPENSSH PRIVATE KEY-----..."
+    }
+  ]
+}
